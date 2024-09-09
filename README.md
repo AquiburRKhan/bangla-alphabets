@@ -1,50 +1,21 @@
-# React + TypeScript + Vite
+# 3D Blackboard with Bangla Alphabets
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project showcases a 3D blackboard displaying Bangla alphabets using `three.js`, `React`, `TypeScript`, and `react-three-fiber`.
 
-Currently, two official plugins are available:
+![Blackboard Preview](https://github.com/AquiburRKhan/bangla-alphabets/blob/main/public/images/Screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **3D Blackboard**: A 3D blackboard created with `three.js` and `react-three-fiber`.
+- **Bangla Alphabets**: Display of Bangla alphabets in a fun and interactive way.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Three.js](https://threejs.org/) - A 3D library that makes WebGL simpler.
+- [react-three-fiber](https://github.com/pmndrs/react-three-fiber) - A React renderer for `three.js`.
+- [TypeScript](https://www.typescriptlang.org/) - A strongly typed programming language that builds on JavaScript.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Demo
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+You can check out the live demo of the project [here](https://bangla-alphabets.vercel.app).
