@@ -64,8 +64,6 @@ const handleEnterArClick = async () => {
   } else {
     window.alert("AR is not supported on your device");
   }
-
-  handleiOSAR();
 };
 
 const App = () => {
