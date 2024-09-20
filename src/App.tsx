@@ -29,7 +29,8 @@ const getMobileOperatingSystem = () => {
 };
 
 const handleiOSAR = () => {
-  const usdzFile = "/ar/bangla-alphabets.usdz"; // Replace with the actual path to the USDZ file
+  const usdzFile =
+    "https://drive.usercontent.google.com/download?id=1qpKnPRNmdEsJv8wWTpElPI8wBB1-xboa&export=download"; // Replace with the actual path to the USDZ file
   const a = document.createElement("a");
   a.href = usdzFile;
   a.rel = "ar";
@@ -63,6 +64,8 @@ const handleEnterArClick = async () => {
   } else {
     window.alert("AR is not supported on your device");
   }
+
+  handleiOSAR();
 };
 
 const App = () => {
