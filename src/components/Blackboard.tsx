@@ -2,6 +2,8 @@ import { Box, CameraControls, Cylinder, Text3D } from "@react-three/drei";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import BanglaLetter from "./BanglaLetter";
+// import { useFrame } from "@react-three/fiber";
+// import { setCanvasScene } from "../utils/downloadGLB";
 
 const textMaterial = new THREE.MeshBasicMaterial({
   color: "#fff",
@@ -57,6 +59,12 @@ const Blackboard = () => {
       14
     );
   }, []);
+
+  // uncomment this to download the glb
+  // useFrame((state) => {
+  //   const scene = state.scene;
+  //   setCanvasScene(scene);
+  // });
 
   return (
     <>
