@@ -21,7 +21,12 @@ const getMobileOperatingSystem = () => {
   }
 
   // iOS detection from: http://stackoverflow.com/a/9039885/177710
-  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+  if (
+    (/iPhone|iPod/.test(userAgent) && !window.MSStream) ||
+    (navigator.userAgent.match(/Mac/) &&
+      navigator.maxTouchPoints &&
+      navigator.maxTouchPoints > 2)
+  ) {
     return "iOS";
   }
 
