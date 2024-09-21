@@ -75,7 +75,7 @@ const App = () => {
         }}
         onClick={handleEnterArClick}
       >
-        Enter AR
+        Enter AR {getMobileOperatingSystem()}
       </button>
       {/* <button
         style={{
