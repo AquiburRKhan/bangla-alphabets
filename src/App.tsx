@@ -25,7 +25,7 @@ const getMobileOperatingSystem = () => {
     return "iOS";
   }
 
-  return "";
+  return userAgent;
 };
 
 const handleiOSAR = () => {
